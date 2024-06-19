@@ -1,0 +1,51 @@
+body
+    font-family: sans-serif
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
+
+#searchContainer
+    display: flex
+    margin-bottom: 20px
+    width: 80%
+    max-width: 500px
+
+#countryName
+    flex-grow: 1
+    padding: 12px
+    border: 2px solid white
+    border-radius: 5px 0 0 5px
+    margin: 0
+    background-color: rgba(255, 255, 255, 0.2)
+    color: white
+
+button
+    padding: 12px 25px
+    background-color: #007bff
+    color: white
+    border: none
+    border-radius: 0 5px 5px 0
+    cursor: pointer
+    font-size: 16px
+
+#countryInfo
+    background-color: rgba(0, 0, 0, 0.7)
+    padding: 25px
+    border-radius: 10px
+    text-align: center
+    width: 80%
+    max-width: 500px
+    display: none
+
+    & img
+        max-width: 250px
+        margin-bottom: 20px
+        border-radius: 5px
+
+    & p
+        margin: 8px 0
+
+@media (max-width: 768px)
+    #searchContainer, #countryInfo
+        width: 90%
